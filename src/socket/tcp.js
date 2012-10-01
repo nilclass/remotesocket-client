@@ -11,7 +11,7 @@ define(['util', 'socket/event_emitter'], function(util, eventEmitter) {
 
     var query = this._generateQuery();
 
-    this.socket = new WebSocket(proxyBase + "/" + this.host + '/' + this.port + query, 'tcp-stream-protocol');
+    this.socket = new WebSocket(proxyAddress + "/" + this.host + '/' + this.port + query, 'tcp-stream-protocol');
 
     this.socket.onopen = function() {
       console.log("Socket opened.");
