@@ -1,0 +1,33 @@
+
+.template {
+    display: none;
+}
+
+.template.current {
+    display: block;
+}
+
+.log { white-space:pre; font-family:monospace; }
+textarea { font-family:monospace; }
+
+#log-streams {
+    margin: auto;
+    overflow: auto;
+    height: 600px;
+    width: 960px;
+}
+
+#log-streams .log {
+    min-height: 100%;
+    margin:0;padding:0;
+    width: 460px;
+}
+
+#log-stream-client {
+    background: #ddd;
+    float: left;
+}
+#log-stream-server {
+    background: #eee;
+    float: right;
+}
