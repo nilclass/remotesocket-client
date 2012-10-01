@@ -197,6 +197,7 @@ define([
             this.jump('authenticated', md[1]);
           } else {
             this.trigger('error', 'authentication failed ' + response);
+            this.tcp.close();
           }
         }.bind(this)
       );
